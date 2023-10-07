@@ -5,28 +5,16 @@
   width: 150px;
 }
 /* Skills filling bar CSS */
-.skill-mf .progress {
-    background-color: #6a737c;
-    margin: 0.5rem 0 1.2rem 0;
-    border-radius: 0;
-    height: 0.7rem;
-    overflow: hidden;
-  }
-  
-  .skill .progress-bar {
-    height: 100%;
-    width: 0; /* Start with 0 width */
-    animation: fillWidth 2s ease-in-out forwards; /* Animation */
-  }
-  
-  @keyframes fillWidth {
-    0% {
-      width: 0; /* Start with 0 width */
-    }
-    100% {
-      width: var(--percentage); /* Fill to the specified percentage */
-    }
-  }
+.progress-bar {
+  width: 0%; /* Initial width set to 0% */
+  transition: width 1s ease; /* Add smooth transition for the animation */
+}
+
+/* Add the empty-progress class to each progress bar */
+.empty-progress {
+  width: 0% !important; /* Override initial width */
+}
+
    /* End Skills filling bar CSS */
 
 /* Navigation */
