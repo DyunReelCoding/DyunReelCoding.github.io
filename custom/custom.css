@@ -1,0 +1,170 @@
+/* Quote pic size */
+.testi-bg
+{
+  height: 150px;
+  width: 150px;
+}
+/* Skills filling bar CSS */
+.skill-mf .progress {
+    background-color: #6a737c;
+    margin: 0.5rem 0 1.2rem 0;
+    border-radius: 0;
+    height: 0.7rem;
+    overflow: hidden;
+  }
+  
+  .skill .progress-bar {
+    height: 100%;
+    width: 0; /* Start with 0 width */
+    animation: fillWidth 2s ease-in-out forwards; /* Animation */
+  }
+  
+  @keyframes fillWidth {
+    0% {
+      width: 0; /* Start with 0 width */
+    }
+    100% {
+      width: var(--percentage); /* Fill to the specified percentage */
+    }
+  }
+   /* End Skills filling bar CSS */
+
+/* Navigation */
+    /* In Homepage */
+    
+    /* Size of Text Landing page */
+    .navbar-b .navbar-brand {
+        font-size: 2.0rem;
+      }
+      /* underline color */
+      .navbar-b.navbar-trans .nav-link:before {
+        background-color: aqua;
+      }
+     
+
+    /* After homepage */
+
+    /* BG of nav */
+    .navbar-b.navbar-reduce {      
+        /* background-image: url('/images/nav-bg-2.jpg'); */
+        background: linear-gradient(45deg, cyan, blue, black, red);
+        background-size: 400% 400%;
+        animation: gradient-animation 10s ease infinite;
+      }
+      @keyframes gradient-animation {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+     /* End BG of nav */
+   /* Landing Page color */
+   .navbar-b.navbar-reduce .nav-link {
+    color: white;
+  }
+  /* underline color of text */
+  .navbar-b.navbar-reduce .nav-link:before {
+  background-color: aqua;
+}
+/* Color of text in nav when in its page */
+  .navbar-b.navbar-reduce .show > .nav-link,
+.navbar-b.navbar-reduce .active > .nav-link,
+.navbar-b.navbar-reduce .nav-link.show,
+.navbar-b.navbar-reduce .nav-link.active {
+  color: aqua;
+}
+/* Color text when hover */
+  .navbar-b.navbar-reduce .nav-link:hover {
+    color: aqua;
+  }
+  /* Color text of nav */
+  .navbar-b.navbar-reduce .navbar-brand {
+    color: white;
+    font-weight: 700;
+  }
+/* End of Navigation */
+
+/* Text color of services and portfolio */
+.services-color, .port-color{
+    color: white;
+}
+
+/* Service boxes gover color */
+.service-box:hover .ico-circle {
+    background-color: black;
+    
+  }
+  
+/* Styles for the fireworks button */
+#btn {
+  background-color: rgba(0, 0, 0, 0);
+	border-radius: 50%;
+	box-shadow: 4px 4px 5px rgba(255, 255, 255, 0.15);
+	border: none;
+	color: white;
+	cursor: pointer;
+	position: relative;
+	transition: transform 0.1s linear, box-shadow 0.1s linear;
+	z-index: 10;
+	width: 80px;
+	height: 60px;
+}
+
+.f-img {
+  width: 60px;
+  height: 50px;
+}
+
+#btn:active {
+	transform: translate(4px, 4px);
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0); 
+}
+
+#btn:focus {
+	outline: none;
+}
+
+.particle {
+	--x: 10;
+	--y: 10;
+	background-color: rebeccapurple;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 5px;
+	width: 5px;
+	z-index: -1;
+	border-radius: 50%;
+}
+
+.particle.move {
+	animation: move 1000ms linear forwards;
+}
+
+@keyframes move {
+	to {
+		transform: translate(var(--x), var(--y));
+	}
+	
+	95% {
+		opacity: 1;
+	}
+	
+	100% {
+		opacity: 0;
+	}
+}
+
+.move {
+	width: 30px;
+	height: 30px;
+}
+
+/* End Styles for the fireworks button */
+  
