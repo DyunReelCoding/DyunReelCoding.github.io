@@ -4,6 +4,7 @@
   height: 150px;
   width: 150px;
 }
+
 /* Skills filling bar CSS */
 .progress-bar {
   width: 0%; /* Initial width set to 0% */
@@ -82,7 +83,7 @@
     color: white;
 }
 
-/* Service boxes gover color */
+/* Service boxes hover color */
 .service-box:hover .ico-circle {
     background-color: black;
     
