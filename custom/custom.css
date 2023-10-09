@@ -22,11 +22,11 @@
     /* In Homepage */
     
     /* Size of Text Landing page */
-    .navbar-b .navbar-brand {
+    .custom-nav .navbar-brand {
         font-size: 2.0rem;
       }
       /* underline color */
-      .navbar-b.navbar-trans .nav-link:before {
+      .custom-nav.navbar-trans .nav-link:before {
         background-color: aqua;
       }
      
@@ -34,7 +34,7 @@
     /* After homepage */
 
     /* BG of nav */
-    .navbar-b.navbar-reduce {      
+    .custom-nav.navbar-reduce {      
         /* background-image: url('/images/nav-bg-2.jpg'); */
         background: linear-gradient(45deg, black, cyan, red, blue);
         background-size: 400% 400%;
@@ -53,26 +53,26 @@
     }
      /* End BG of nav */
    /* Landing Page color */
-   .navbar-b.navbar-reduce .nav-link {
+   .custom-nav.navbar-reduce .nav-link {
     color: white;
   }
   /* underline color of text */
-  .navbar-b.navbar-reduce .nav-link:before {
+  .custom-nav.navbar-reduce .nav-link:before {
   background-color: aqua;
 }
 /* Color of text in nav when in its page */
-  .navbar-b.navbar-reduce .show > .nav-link,
-.navbar-b.navbar-reduce .active > .nav-link,
-.navbar-b.navbar-reduce .nav-link.show,
-.navbar-b.navbar-reduce .nav-link.active {
+  .custom-nav.navbar-reduce .show > .nav-link,
+.custom-nav.navbar-reduce .active > .nav-link,
+.custom-nav.navbar-reduce .nav-link.show,
+.custom-nav.navbar-reduce .nav-link.active {
   color: aqua;
 }
 /* Color text when hover */
-  .navbar-b.navbar-reduce .nav-link:hover {
+  .custom-nav.navbar-reduce .nav-link:hover {
     color: aqua;
   }
   /* Color text of nav */
-  .navbar-b.navbar-reduce .navbar-brand {
+  .custom-nav.navbar-reduce .navbar-brand {
     color: white;
     font-weight: 700;
   }
