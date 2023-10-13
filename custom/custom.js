@@ -19,4 +19,28 @@ $(document).ready(function () {
       }
     );
   });
+
+// Send message notif
+  document.addEventListener("DOMContentLoaded", function () {
+    const contactForm = document.querySelector(".contactForm");
+    const sendmessageDiv = document.getElementById("sendmessage");
+    const dismissMessageBtn = document.getElementById("dismissMessage");
+  
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent the form from submitting
+  
+      
+      sendmessageDiv.style.display = "block";
+    });
+  
+    // Add an event listener to the "X" button to hide the message and clear the form
+    dismissMessageBtn.addEventListener("click", function (e) {
+      e.preventDefault(); // Prevent the button from submitting (it is inside a form)
+      sendmessageDiv.style.display = "none"; // Hide the message
+      contactForm.reset(); // Clear the form
+    });
+  });
+  
+  
+
   

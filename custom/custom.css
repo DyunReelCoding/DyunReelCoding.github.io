@@ -88,6 +88,25 @@
     background-color: black;
     
   }
+
+
+  /* notification.css */
+.notification {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  z-index: 9999;
+}
+
+.notification.show {
+  display: block;
+}
+
   
 /* Styles for the fireworks button */
 /* #btn {
